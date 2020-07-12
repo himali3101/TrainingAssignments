@@ -1,0 +1,121 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-image: url('https://content3.jdmagicbox.com/comp/kolkata/s2/033pxx33.xx33.181113123343.m3s2/catalogue/aaheli-esplanade-kolkata-restaurants-16neyfhqgw.jpg');
+    background-attachment: fixed;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: lightcoral;
+    height: 1cm;
+
+  }
+  
+.nav li {
+    display: inline;
+  }
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: xx-large;
+    
+}
+
+.menu ul{
+    list-style-type: none;
+    left: 1.2cm;
+}
+
+.menu li{
+    display: inline-block;
+    background : rgba(255, 255,255,0.6);
+    block-size: 1cm;
+    
+}
+
+.menu a{
+    color: #A0522D;
+    text-decoration: none;
+    padding: 60px 60px;
+    text-align: center;
+    margin: auto;
+    font-size: xx-large;
+}
+
+.iconDetails {
+    margin:0 2%;
+    float:left;
+    height:40px;
+    width:40px;
+}
+
+.container2 {
+    padding: 2%;
+    background : rgba(255, 255,255,0.6);
+    width: 900px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    bottom: auto;
+}
+.text {
+    float:left;
+    font-size: larger;
+    color: 		#A0522D;
+    
+}
+
+.text li{
+    list-style-type: none;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+
+.footer{
+    background-color: #0a0a0a;
+    height: 150px;
+}
+
+.social ul{
+    display: flex;
+}
+
+.social img{
+    height: 30px;
+}
+
+.social ul li a{
+    padding: 15px;
+}
+
+.footer-menu ul{
+    display: flex;
+}
+
+.footer-menu ul li a{
+    padding: 0px 30px;
+    border-left: 3px solid #2e2e2e;
+    color: rgba(255, 255,255,0.8);
+}
+
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+
+}
+
+.copyright p{
+    color: #b9b9b9;
+}
+

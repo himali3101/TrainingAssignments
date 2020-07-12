@@ -1,0 +1,60 @@
+body, html{
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color:#666;
+}
+
+.img1{
+    background-image : url("https://ohmycake.co.za/wp-content/uploads/2019/07/OMC_facebook_home.jpg");
+    height: 25cm;
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.text .border{
+    background-color: #111;
+    color : #fff;
+    padding: 20px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.img2{
+    background-image: url("https://lh3.googleusercontent.com/proxy/rY0SoDO8XNkYPumgWo1W37XWBggjLUKEkQ-JsI_RJaj1_Lf7cCNut3fyN1Rlv8sDwxz0ZLV2_IU0K7Vv1oG0RhFo4_i5QAM");
+    min-height: 600px;
+}
+
+.img3{
+     background-image: url("https://img5.goodfon.com/wallpaper/nbig/0/eb/colorful-morozhenoe-rozhok-fruit-berries-ice-cream-cone.jpg");
+        min-height: 600px;
+}
+
+
+.img4{
+    background-image: url("https://i.pinimg.com/736x/df/df/98/dfdf98d8a7507964929a86dcd81b652d.jpg");
+       min-height: 600px;
+}
+
+.img1, .img2, .img3, .img4{
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+

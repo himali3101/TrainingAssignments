@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SUMMER CAMP REGISTRATION FORM">
+    <link rel="stylesheet" href="stylesheet2.css">
+    <title>HTML FORM</title>
+</head>
+<body>
+    <header class="nav1">
+        <nav>
+            <span>
+                <img src="https://townelaker.com/wp-content/uploads/2019/01/Summer-Camp-1024x603.jpg" alt="summer camp"
+                width="300">
+            </span>
+
+            <span class="title">
+                REGISTRATION FORM
+            </span>
+        </nav>
+    </header>
+
+    <main>
+        <form class="container">
+            <fieldset>
+                <p><b><u>Personal Information</u></b></p>
+
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name" placeholder="Full name" required>
+                <br><br>
+
+                <label for="dob">Birth Date :</label>
+                <input type="date" name="dob" id="dob">
+                <br><br>
+
+                <label for="age">Age :</label>
+                <input type="number" name="age" id="age" placeholder="age" min="10" required>
+                <br><br>
+
+                <label for="gender">Gender :</label>
+
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="gender" >
+                <br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" id="gender" >
+                <br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="gender">Other</label>
+                <input type="radio" name="gender" id="gender" >
+                <br><br>
+
+                <label for="email">Email Address :</label>
+                <input type="email" name="email" id="email" placeholder="Email Address">
+                <br><br>
+
+                <label for="phone">Phone Number :</label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone no" required>
+                <br><br>
+
+                <label for="address">Address :</label><br>
+                <input type="text" name="street" placeholder="street">
+                <input type="text" name="city" placeholder="city">
+                <input type="text" name="state" placeholder="state">
+                <input type="text" name="zipcode" placeholder="zip code">
+                <br><br>
+            </fieldset>   
+            <fieldset>
+                <p><b><u>Emergency Information</u></b></p>
+
+                <label for="Ename">Name :</label>
+                <input type="text" name="Ename" id="Ename" placeholder="Full name" required>
+                <br><br>
+
+                <label for="relationship">Relationship :</label>
+                <input type="text" name="relationship" id="relationship" placeholder="Relationship">
+                <br><br>
+
+                <label for="EmergencyPhone">Phone Number :</label>
+                <input type="tel" name="EmergencyPhone" id="EmergencyPhone" placeholder="Phone no" required>
+                <br><br>
+
+                <label for="Eaddress">Address :</label><br>
+                <input type="text" name="Estreet" placeholder="street">
+                <input type="text" name="Ecity" placeholder="city">
+                <input type="text" name="Estate" placeholder="state">
+                <input type="text" name="Ezipcode" placeholder="zip code">
+                <br><br>
+            </fieldset>   
+                <hr>
+
+                <input type="reset" name="RESET" class="button">
+                <input type="submit" name="SUBMIT" class="button">
+            
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

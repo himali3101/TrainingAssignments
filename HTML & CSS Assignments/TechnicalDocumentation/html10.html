@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="C Programming Documentation for begginers">
+    <link rel="stylesheet" href="stylesheet10.css">
+    <title>Document</title>
+</head>
+<body>
+    
+        <header>C PROGRAMMING DOCUMENTATION FOR BEGGINERS</header>
+
+        <hr>
+        <nav id="navbar">
+            <header>C Tutorials</header>
+            <ul>
+                <li><a class="nav-link" href="#introduction">Introduction</a></li>
+              
+                <li><a class="nav-link" href="#programStructure">Program Structure</a></li>
+
+                <li><a class="nav-link" href="#basicSyntax">Basic Syntax</a></li>
+              
+                <li><a class="nav-link" href="#dataType">Data Type</a></li>
+
+                <li><a class="nav-link" href="#variables">Variables</a></li>
+              
+                <li><a class="nav-link" href="#constants">Constants</a></li>
+            
+                <li><a class="nav-link" href="#loops">Loops</a></li>
+              
+                <li><a class="nav-link" href="#functions">Functions</a></li>
+            
+            </ul>
+        </nav>
+  
+
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <h1>Introduction</h1>
+            <article>
+                <p>C programming language is a MUST for students and working professionals to become a great Software Engineer specially when they 
+                        are working in Software Development Domain. I will list down some of the key advantages of learning C Programming:</p>
+                    <ul>
+                        <li> Easy to learn.</li>
+                        <li> Structured language  </li>
+                        <li> It produces efficient programs</li>
+                        <li> It can handle low-level activities</li>
+                        <li> It can be compiled on a variety of computer platforms </li>
+                    </ul>
+                <p>
+                     <h4>Facts about C</h4>
+                       <ul>
+                        <li>C was invented to write an operating system called UNIX.</li>
+                        <li>C is a successor of B language which was introduced around the early 1970s.</li>
+
+                        <li>   The language was formalized in 1988 by the American National Standard Institute (ANSI).</li>
+                            
+                        <li>    The UNIX OS was totally written in C.</li>
+                            
+                        <li>    Today C is the most widely used and popular System Programming Language.</li>
+                            
+                        <li>    Most of the state-of-the-art software have been implemented using C.</li>
+                            
+                        <li>    Today's most popular Linux OS and RDBMS MySQL have been written in C.</li>
+                        </ul>
+                </p>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="programStructure">
+            <h1>Program Structure</h1>
+                <article>
+                    <p>
+                        <h4>Hello World Using C</h4>
+                        #include stdio.h<br>
+                        int main() {<br>
+                        /* my first program in C */<br>
+                        printf("Hello, World! \n");<br>
+                        return 0;<br>
+                        }<br><br>
+                        <h4> Let us take a look at the various parts of the above program −</h4>
+                                <ul>
+                                    <li>The first line of the program #include <stdio.h> is a preprocessor command, which tells a C compiler to include stdio.h file before going to actual compilation.</li>
+                                    <li>The next line int main() is the main function where the program execution begins.</li>      
+                                    <li> The next line /*...*/ will be ignored by the compiler and it has been put to add additional comments in the program. So such lines are called comments in the program.</li>                                
+                                    <li>The next line printf(...) is another function available in C which causes the message "Hello, World!" to be displayed on the screen.</li>     
+                                    <li>The next line return 0; terminates the main() function and returns the value 0.</li>
+                                </ul>
+                    </p>
+                </article>
+        </section>
+
+        <section class="main-section" id="basicSyntax">
+            <h1>Basic Syntax</h1>
+                <article>
+                    <h3>Tokens in C</h3>
+                    <p>
+                        A C program consists of various tokens and a token is either a keyword, an identifier, a constant, a string literal, 
+                        or a symbol. For example, the following C statement consists of five tokens −<br>
+
+                        printf("Hello, World! \n");<br>
+                        The individual tokens are −<br>
+                        printf<br>
+                        (<br>
+                        "Hello, World! \n"<br>
+                        );
+                    </p>                        ;
+                        <h3>Semicolons</h3>
+                        <p>    
+                            In a C program, the semicolon is a statement terminator. That is, each individual statement must be ended with a semicolon. 
+                            It indicates the end of one logical entity.<br>
+                            Given below are two different statements −<br>
+                            printf("Hello, World! \n");<br>
+                            return 0;<br>
+                        </p>
+                        <h3>Comments</h3>
+                        Comments are like helping text in your C program and they are ignored by the compiler.
+                         They start with /* and terminate with the characters */ as shown below −<br>
+
+                        /* my first program in C */<br>
+                        You cannot have comments within comments and they do not occur within a string or character literals.<br>
+                </article>
+        </section>
+
+        <section class="main-section" id="dataType">
+            <h1>Data Type</h1>
+                <article>
+                    <p>
+                        Data types specify how we enter data into our programs and what type of data we enter. 
+                        C language has some predefined set of data types to handle various kinds of data that we can use in our program. 
+                        These datatypes have different storage capacities.<br>
+                        C language supports 2 different type of data types:<br>
+                        <ol>
+                            <li>Primary data types:
+                                    These are fundamental data types in C namely integer(int), floating point(float), character(char) and void.
+                            </li>
+                            <li> Derived data types:
+                                Derived data types are nothing but primary datatypes but a little twisted or grouped together like array, stucture, union and pointer. These are discussed in details later.
+                            </li>
+                        </ol>
+                        Data type determines the type of data a variable will hold. If a variable x is declared as int. 
+                        it means x can hold only integer values. Every variable which is used in the program must be declared as what data-type it 
+                        is.
+                    </p>
+                </article>
+        </section>
+
+        <section class="main-section" id="variables">
+            <h1>Variables</h1>
+                <article>
+                    <p>
+                        A variable is nothing but a name given to a storage area that our programs can manipulate. 
+                        Each variable in C has a specific type, which determines the size and layout of the variable's memory; 
+                        the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.<br><br>
+
+                        The name of a variable can be composed of letters, digits, and the underscore character. 
+                        It must begin with either a letter or an underscore. Upper and lowercase letters are distinct because C is case-sensitive. 
+                        Based on the basic types explained in the previous chapter, there will be the following basic variable types −<br><br>
+                    </p>
+                    <ol>
+                        <li> <h4>char</h4>
+                            Typically a single octet(one byte). It is an integer type.</li>
+                        <li><h4>int</h4>
+                            The most natural size of integer for the machine.</li>
+
+                        <li><h4>float</h4>
+                            A single-precision floating point value.
+                        </li>
+                        <li><h4>double</h4>
+                            A double-precision floating point value.
+                        </li>
+                        <li><h4>void</h4>
+                            Represents the absence of type.
+                        </li>
+                    </ol>
+                </article>
+        </section>
+
+        <section class="main-section" id="constants">
+            <h1>Constants</h1>
+                <article>
+                    <p>Constants refer to fixed values that the program may not alter during its execution. 
+                        These fixed values are also called literals.
+                    </p>
+                    <p>Constants can be of any of the basic data types like an integer constant, a floating constant, a character constant, 
+                        or a string literal. There are enumeration constants as well.
+                    </p>
+                    <p>    
+                    Constants are treated just like regular variables except that their values cannot be modified after their definition.
+                    </p>
+                </article>
+        
+        </section>
+
+        <section class="main-section" id="loops">
+            <h1>Loops</h1>
+                <article>
+                    <p>
+                        You may encounter situations, when a block of code needs to be executed several number of times. In general, statements 
+                        are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.<br><br>
+
+                        Programming languages provide various control structures that allow for more complicated execution paths.<br><br>
+
+                        A loop statement allows us to execute a statement or group of statements multiple times. Given below is the general form of a 
+                        loop statement in most of the programming languages −<br>
+                        <img src="https://www.tutorialspoint.com/cprogramming/images/loop_architecture.jpg" alt="loop img">
+
+                    </p>
+
+                    <ol>
+                        <li><h4>while loop</h4>
+                            Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.</li>
+                        
+                        <li> <h4>for loop</h4>
+                            Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.</li>
+                            
+                        <li> <h4>do...while loop</h4>
+                            It is more like a while statement, except that it tests the condition at the end of the loop body.</li>
+                    
+                        <li><h4>nested loops</h4>
+                            You can use one or more loops inside any other while, for, or do..while loop</li>
+                    </ol>
+                </article>
+        </section>
+
+        <section class="main-section" id="functions">
+            <h1>Functions</h1>
+                <article>
+                    <p>
+                        A function is a group of statements that together perform a task. Every C program has at least one function, which is main(), 
+                        and all the most trivial programs can define additional functions.<br><br>
+
+                        You can divide up your code into separate functions. How you divide up your code among different functions is up to you, but logically the division is such that each function performs a specific task.
+                        <br><br>
+                        A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function.
+                        <br><br>
+                        The C standard library provides numerous built-in functions that your program can call. For example, strcat() to concatenate two strings, memcpy() to copy one memory location to another location, and many more functions.
+                        <br><br>
+                        A function can also be referred as a method or a sub-routine or a procedure, etc.
+                    </p>
+                </article>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
