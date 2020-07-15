@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Check </title>
+</head>
+<body>
+   
+    <label for="num" >Enter a number to check whether the number occurs in list or not : </label>
+    <input  id="num" type="number" oninput="check()" ><br><br>
+
+    <p id="text"></p>
+
+    <p id="result" style="font-weight: bold; font-size: xx-large;"></p>
+    
+    <script>
+        function check(){
+            var num = document.getElementById("num");
+            num = num.value;
+
+            var list = [23, 56, 1, 2 , 66, 32, 54, 9];
+            var result = false;
+
+            for(let i=0 ; i<list.length; i++){
+                if( list[i] == num ){
+                    result = true;
+                    break;
+                }
+            } 
+
+            document.getElementById("text").innerHTML = "[ "+ list + " ]";
+
+            if( result == true){
+                document.getElementById("result").innerHTML = "Element Present";
+
+            }
+            else{
+                document.getElementById("result").innerHTML = "Element not Present";
+
+            }
+
+        }
+    </script>
+</body>
+</html>

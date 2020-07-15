@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summation or Multiplication</title>
+</head>
+<body>
+    <label for="num" >Enter a number</label>
+    <input name="num" id="num" type="number" #num oninput="multiply()"><br><br>
+
+    <p id="text" style="font-size: xx-large; font-weight: bold; "></p>
+
+    <script>
+
+        function multiply(){
+
+            var userValue = document.getElementById("num");
+            var num = userValue.value;
+            var result = [];
+
+            for(let j=1; j<=12 ; j++){
+
+                   result[j] = num * j;
+
+            }
+
+            document.getElementById("text").innerHTML = " Multiplication Table of "+num+ " is "+result;
+        }
+
+
+    </script>
+</body>
+</html>

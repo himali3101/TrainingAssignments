@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvenOdd Function</title>
+</head>
+<body>
+    <p>Even or Odd</p>
+        <div>
+            <label for="number">Enter A Number :</label>
+            <input name="number" id="number" type="number" #number><br>
+            <input type="button" value="submit" onclick="evenOrOdd(number.value)">
+            <p id="text"></p>
+        </div>
+        <script>
+            function evenOrOdd(n){
+                if( n%2 == 0)
+                    document.getElementById("text").innerHTML = " "+ n + "number is Even";
+                else
+                    document.getElementById("text").innerHTML = " "+n+" number is Odd";
+            }
+         </script>
+</body>
+</html>

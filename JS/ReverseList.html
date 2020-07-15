@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse List </title>
+</head>
+<body>
+   
+    <p id="text"></p>
+
+    <p id="result"></p>
+    
+    <script>
+
+       function reverseList(){
+           
+           var list = [32, 56, 78, 23, 54, 01];
+           var len = list.length;
+           var result = [];
+           var j = 0 ;
+
+            document.getElementById("text").innerHTML = "Given list is "+list;
+
+            for(let i=len ; i>0 ; i--){
+                result[i] = list[j++];
+            }
+
+            document.getElementById("result").innerHTML = "Reversed Lisr : "+result;
+           
+       }
+
+       reverseList();
+    </script>
+</body>
+</html>

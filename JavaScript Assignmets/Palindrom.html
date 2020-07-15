@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom String</title>
+</head>
+<body>
+   
+    <label for="str" >Enter a String : </label>
+    <input name="str" id="str" type="text" ><br>
+    <input type="submit" onclick="palindrom()"> <br>
+
+    <p id="text"></p>
+
+    <p id="result"></p>
+    
+    <script>
+        function palindrom(){
+            var str = document.getElementById("str");
+            str = str.value;
+            
+            var len = str.length;
+            var result = true;
+
+            for( let i=0 ; i< len/2 ; i++ ){
+
+                if( str[i] != str[len-1-i] ){
+                    result = false;
+                    break;
+                }
+            }
+
+            if( result == true){
+                document.getElementById("result").innerHTML = "String is Palindrom";
+            }
+            else{
+                document.getElementById("result").innerHTML = "String is not Palindrom";
+            }
+        }
+        
+    </script>
+</body>
+</html>

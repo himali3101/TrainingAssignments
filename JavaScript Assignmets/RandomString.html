@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random String</title>
+    <style>
+        p{
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <p id="text"></p>
+    <script>
+        var str = ["Have a GOOD Day!", "Have a BAD Day!"];
+        var result = Math.floor(Math.random()*2);
+        document.getElementById("text").innerHTML = str[result];
+    </script>
+</body>
+</html>

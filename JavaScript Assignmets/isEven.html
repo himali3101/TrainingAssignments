@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isEven</title>
+</head>
+<body>
+        <div>
+            <label for="number">Enter A Number :</label>
+            <input name="number" id="number" type="number" #number><br>
+            <input type="button" value="submit" onclick="isEven(number.value)">
+            <p id="text"></p>
+        </div>
+        <script>
+            function isEven(n){
+                var arr = ["true", "false"];
+
+                document.getElementById("text").innerHTML = arr[n%2];
+            }
+         </script>
+</body>
+</html>

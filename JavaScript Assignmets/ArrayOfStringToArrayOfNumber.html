@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of String To Array Of Number</title>
+</head>
+<body>
+    
+    <div>
+        <body style="text-align: center;"> 
+      
+            <label> 
+                Enter String values (strings, where each string represents a number)
+            </label> <br><br>
+            
+                <input type="text" name="array" id="array" #array/><br> 
+                <button type="submit" onclick="addNumber(array.value)"> 
+                    Add Elements to array
+                </button> <br><br>
+                <button type="submit" name="submit" onclick="numberArray()">Submit Array</button>
+                
+            
+            <br> 
+          
+            <p id="par"></p> 
+    </div>
+    <script>
+        var arr = [];
+        function addNumber(array){
+            arr.push(array);
+            //console.log(array);
+        }
+
+        function numberArray(){
+            var a =[];
+
+            console.log(arr[0]+arr[1]);
+            for(let i=0; i<arr.length ; i++){
+                //console.log(arr[i]);
+                var strToNum = Number(arr[i]);
+                //console.log(strToNum);
+                 a.push(strToNum);
+            }
+            console.log(a[0]+a[1]);
+            document.getElementById("par").innerHTML = "[ "+a+" ]";
+
+            
+        }
+    </script>
+</body>
+</html>

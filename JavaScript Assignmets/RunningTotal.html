@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Total </title>
+</head>
+<body>
+   
+    <p id="text"></p>
+
+    <p id="result"></p>
+    
+    <script>
+
+       function runningTotal(){
+           
+           var list = [32, 56, 78, 23, 54, 01];
+           var total = 0;
+           
+           for(let i=0; i<list.length ; i++){
+               total += list[i];
+           }
+           
+           document.getElementById("text").innerHTML = "Original List"+list;
+
+           document.getElementById("result").innerHTML = "Running total "+total;
+
+       }
+
+        runningTotal();
+    </script>
+</body>
+</html>

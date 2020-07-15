@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Number Function</title>
+</head>
+<body>
+    <div>
+        <p>Find Greatest of Three numbers </p>
+        <label>Enter Three Numbers : 
+            <input type="number" #a name="a" id="a" required><br>
+            <input type="number" #b name="b" id="b" required><br>
+            <input type="number" #c name="c" id="c" required><br>
+            <input type="submit" onclick="max1(a.value, b.value, c.value)">            
+        </label>
+        <p id="text"></p>
+    </div>
+    <script>
+        function max1(a, b, c){
+            if( a>b ){
+                if( a>c){
+                    document.getElementById("text").innerHTML = "Greatest number is "+a;
+                }
+                else{
+                    document.getElementById("text").innerHTML = "Greatest number is "+c;
+                }
+            }
+            else{
+                if( b>c ){
+                    document.getElementById("text").innerHTML = "Greatest number is "+b;
+                }
+                else{
+                    document.getElementById("text").innerHTML = "Greatest number is "+c;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
+

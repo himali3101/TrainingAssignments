@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllPrime Numbers</title>
+</head>
+<body>
+    
+    <p id="text" style="width: 500px; "></p>
+    
+    <script>
+
+        function prime(){
+           
+            var count = 0;
+            var arr = [];
+
+            for(let i=2; i<1000 ; i++){
+                count = 0;
+                for(let j=2 ; j<i ; j++){
+                    if( i%j == 0){
+                        count++;
+                    }
+                }
+                if( count == 0)
+                    arr.push(i);
+            }
+
+            document.getElementById("text").innerHTML = arr;
+        }
+            
+         prime();
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraction of Head</title>
+</head>
+<body>
+    <p>A function that takes a number of flips and returns the fraction that were heads.</p>
+    <div>
+        <label for="num">Enter Number :</label>
+        <input name="num" id="num" type="number">
+        <input type="submit" onclick="headsRatio(num.value)">
+        <p id="text"></p>
+    </div>
+    <script>
+        function headsRatio(num){
+            var arr = ["Head", "Tail"];
+            var count=0;
+                for(let i=0; i<num; i++){
+                    var result = Math.floor(Math.random() * 2);
+                    console.log(arr[result]);
+                    if( arr[result] == "Head" ){
+                        count++;
+                    }
+            }
+            var final = count / (num-count);
+            document.getElementById("text").innerHTML = "The fraction that were heads "+final ;
+        }
+    </script>
+</body>
+</html>

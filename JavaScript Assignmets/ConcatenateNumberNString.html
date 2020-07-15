@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenate Number and String</title>
+</head>
+<body>
+    <div>
+        <p>Concatenate Number and String </p>
+            <label for="number">Enter a Number : 
+                <input name="number" id="number" #number type="number" required>
+            </label><br>
+            <label for="str">Enter a short string(character) : 
+                <input type="text" name="str" id="str" #str required>
+            </label>
+            <input type="submit" onclick="concatenate(number.value,str.value)">
+        <p id="text"> </p>
+    </div>
+    <script>
+        function concatenate( num, str ){
+            var result = " ";
+            for( let i=0 ; i<num ; i++){
+                result = result + str;
+            }
+            result = result + str;
+            document.getElementById("text").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

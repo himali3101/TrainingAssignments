@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Number </title>
+</head>
+<body>
+   
+    <p id="text"></p>
+
+    <p id="result"></p>
+    
+    <script>
+
+       function largestNumber(){
+           
+           var list = [32, 56, 78, 23, 54, 01];
+           var max = 0;
+            var len = list.length;
+
+            document.getElementById("text").innerHTML = "Given list is "+list;
+
+            list = list.sort();
+
+            max = list[len-1];
+
+            document.getElementById("result").innerHTML = "Largest Element : "+max;
+           
+       }
+
+       largestNumber();
+    </script>
+</body>
+</html>
