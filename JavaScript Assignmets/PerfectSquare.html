@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Square</title>
+</head>
+<body>
+    <script>
+
+        function PerfectSquare(){
+
+            var result = [];
+
+            for( let i=1 ;  ; i++){
+                    for( let j=1 ; j <= Math.ceil(i/2) ; j++  ){
+                        if( j*j == i){
+                            result.push(i);
+                            break;
+                        }
+                    }
+                    if( result.length == 12){
+                        break;
+                    }
+
+            }
+
+            document.write(result);
+        }
+
+        PerfectSquare();
+
+    </script>
+</body>
+</html>

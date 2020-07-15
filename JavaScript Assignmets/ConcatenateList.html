@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenate List</title>
+</head>
+<body>
+    <p id="list1"></p>
+
+    <p id="list2"></p>
+
+    <p id="result"></p>
+
+    <script>
+        var list1 = [ "a" , "b" , "c" , "d"];
+
+        var list2 = [ 1 , 2 , 3 , 4 ];
+
+        var list3 = list1.concat(list2);
+
+        document.getElementById("list1").innerHTML = "List 1 : "+list1;
+
+        document.getElementById("list2").innerHTML = "List 2 : "+list2;
+
+        document.getElementById("result").innerHTML = "List 3 : "+list3; 
+
+    </script>
+</body>
+</html>
