@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Composed Value Function </title>
+</head>
+<body>
+    <script>
+        var composedValue = (a, b, data) =>  a(b(data));
+
+        var square = (a) => a*a;
+
+        var double = (a) => a*2;
+
+        var result = composedValue(square, double, 4);
+
+        document.write(result);
+
+    </script>
+</body>
+</html>

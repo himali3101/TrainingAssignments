@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Function</title>
+</head>
+<body>
+    <p id="text"></p>
+    <script>
+        function square( value ){
+            return value*value;
+        }
+
+        function map( array , callback ){
+            var len = array.length;
+            var result = [];
+
+            for( let i=0; i<len; i++){
+                var sq = callback(array[i]);
+                result.push(sq);
+            }
+            document.getElementById("text").innerHTML = "[ "+result+" ]";
+        }
+
+        map( [1 , 2 , 3 , 4 , 5], square);
+    </script>
+</body>
+</html>
