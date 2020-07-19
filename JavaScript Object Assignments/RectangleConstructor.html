@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Constructor</title>
+</head>
+<body>
+    <script>
+        class Rectangle{
+            constructor(width , height){
+                this.width = width;
+                this.height = height;
+                this.getArea = function(){
+                    return this.width*this.height;
+                }
+            }
+        }
+
+        var obj = new Rectangle(4, 5);
+        obj.hieght = 50;
+        console.log(obj.height)
+        document.write( obj.getArea());
+    </script>
+</body>
+</html>

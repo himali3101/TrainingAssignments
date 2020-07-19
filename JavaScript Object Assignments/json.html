@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json.parse </title>
+</head>
+<body>
+    <p id="original"></p>
+    <p id="new"></p>
+
+    <script>
+        var json = '{ "firstName" : "Himali" , "lastName" : "Gunjal" }';
+
+        var obj = JSON.parse(json);
+
+        document.write("firstName : "+obj.firstName + "  lastName : "+obj.lastName);
+    </script>
+</body>
+</html>

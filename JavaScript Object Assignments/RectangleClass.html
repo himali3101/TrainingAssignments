@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Class</title>
+</head>
+<body>
+    <script>
+        class Rectangle {
+            constructor(){
+                this.width ;
+                this.height;
+            }
+        }
+
+        var objOfRectangle = new Rectangle();
+        objOfRectangle.width = 50;
+        objOfRectangle.height = 50;
+
+        document.write("Rectangles width for Object 1 : "+objOfRectangle.width+"\n");
+        document.write("Rectangles height for Object 1 : "+objOfRectangle.height);
+
+        var obj2 = new Rectangle();
+        obj2.width = 80;
+        obj2.height = 50;
+
+        obj2.area = 80*50;
+
+        document.write("\n Rectangles width for Object 2 : "+obj2.width+"\n");
+        document.write("Rectangles height for Object 2 : "+obj2.height);
+        document.write("Rectangles area for Object 2 : "+obj2.area);
+       
+
+    </script>
+</body>
+</html>
