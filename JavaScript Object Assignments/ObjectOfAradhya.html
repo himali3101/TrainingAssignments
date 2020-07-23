@@ -19,20 +19,29 @@
             this.profession=profession;
         }
         amithab=new person("amithab","bachan",22,["c"],"24/10/1996",{city:"hyderabad",pincode:"521185"},"false","sranalyst")
-       
+              
+              
         abhisheik=new person("abhisheik",21,"HTML","08/06/1997","false","jr analyst")
-       
         var abhisheik=Object.create(amithab);
+        abhisheik.fname = "abhiskeik";
+        abhisheik.age = 21;
+        abhisheik.skills = "HTML";
+        abhisheik.dateofbirth = "08/06/1997";
+        abhisheik.married = "false";
+        abhisheik.profession = "jr analyst";
 
-        aradhya = new person("aradhya", 20,"java","31/01/1998")
-
-        var aradhya = Object.create(amithab);
+        //aradhya = Object.create()
         var aradhya = Object.create(abhisheik);
+        aradhya.fname = "aradhya";
+        aradhya.age = 20;
+        aradhya.skills = "java";
+        aradhya.dateofbirth = "07/07/1999";
+        aradhya.married = "false";
                
         print=function()
         {
             console.log(abhisheik);
-            console.log(aradhya.lname);
+            console.log(aradhya.profession);
             console.log(aradhya.address);
         }();
     </script>
